@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use('/uploads', express.static('uploads'));
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:5173',
+  origin: 'https://airbnb-clone-by-mory.netlify.app/',
   // origin: 'https://airbnb-clone-bymory.netlify.app',
 }));
 
