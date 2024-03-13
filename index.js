@@ -17,11 +17,12 @@ require('dotenv').config();
 app.use(express.json())
 app.use(cookieParser());
 app.use('/uploads', express.static('uploads'));
-app.use(cors({
-  credentials: true,
-  origin: 'https://airbnb-clone-by-mory.netlify.app',
-  // origin: 'https://airbnb-clone-bymory.netlify.app',
-}));
+// app.use(cors({
+//   credentials: true,
+//   origin: 'https://airbnb-clone-by-mory.netlify.app',
+//   // origin: 'https://airbnb-clone-bymory.netlify.app',
+// }));
+app.use(cors());
 
 app.post('/upload-by-link', async (req, res) => {
   const { link } = req.body;
