@@ -11,12 +11,7 @@ const port = process.env.PORT || 5000
 app.use(express.json())
 app.use(bodyParser.json());
 app.use('/uploads', express.static(__dirname+ '/uploads'))
-app.use(
-  cors({
-    origin: "https://main--airbnb-clone-bymory.netlify.app/",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 
 
