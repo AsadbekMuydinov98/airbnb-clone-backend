@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use('/uploads', express.static(__dirname+ '/uploads'))
 app.use(
   cors({
-    origin: "https://airbnb-clone-bymory.netlify.app",
+    origin: "https://main--airbnb-clone-bymory.netlify.app/",
     credentials: true,
   })
 );
